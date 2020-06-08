@@ -14,3 +14,5 @@ jobs:
         id: bump
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          user: 'GH Bot'
+          email: 'bot@test.sg'
