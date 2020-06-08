@@ -18,5 +18,3 @@ jobs:
       id: bump
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        user: 'First Last'
-        email: 'user.email@gmail.com'
