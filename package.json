@@ -1,29 +1,22 @@
 {
-  "name": "gh-action-bump-version",
+  "name": "testrelease",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phips28/gh-action-bump-version.git"
+    "url": "git+https://github.com/themyth92/testRelease.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/phips28/gh-action-bump-version/issues"
+    "url": "https://github.com/themyth92/testRelease/issues"
   },
-  "homepage": "https://github.com/phips28/gh-action-bump-version#readme",
-  "private": true,
-  "main": "index.js",
-  "scripts": {
-    "start": "node ./index.js",
-    "test": "jest"
-  },
+  "homepage": "https://github.com/themyth92/testRelease#readme",
   "dependencies": {
-    "actions-toolkit": "^2.2.0",
-    "yargs": "^15.3.1"
-  },
-  "devDependencies": {
-    "jest": "^25.2.7",
-    "standard": "^14.3.3"
+    "actions-toolkit": "^2.2.0"
   }
 }
