@@ -8,21 +8,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: "Checkout source code"
-        uses: "actions/checkout@v2"
+      - uses: tool3/bump@master
+        id: bump
         with:
-          ref: ${{ github.ref }}
-      - name: "cat package.json"
-        run: cat ./package.json
-      - name: "Setup Node.js"
-        uses: "actions/setup-node@v1"
-        with:
-          node-version: 12
-      - name: "Automated Version Bump"
-        uses: "phips28/gh-action-bump-version@master"
-        with:
-          tag-prefix: ''
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: "cat package.json"
-        run: cat ./package.json
+          github_token: ${{ secrets.GITHUB_TOKEN }}
