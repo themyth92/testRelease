@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/themyth92/testRelease/issues"
   },
-  "homepage": "https://github.com/themyth92/testRelease#readme"
+  "homepage": "https://github.com/themyth92/testRelease#readme",
+  "dependencies": {
+    "actions-toolkit": "^2.2.0"
+  }
 }
