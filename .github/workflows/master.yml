@@ -11,6 +11,9 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
     - uses: tool3/bump@v1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
