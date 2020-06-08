@@ -1,0 +1,20 @@
+name: Master branch
+on:
+  pull_request:
+    types: closed
+    branches:
+      - master
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Bump version
+        uses: 'phips28/gh-action-bump-version@master'
+        with:
+          tag-prefix:  ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
