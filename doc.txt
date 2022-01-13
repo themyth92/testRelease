@@ -1,0 +1,36 @@
+Root endpoint: https://l9md4hy6ue.execute-api.ap-southeast-1.amazonaws.com/staging/
+Header:
+ x-api-key: Mgh7AR1CycHTdHnN8Wbhaz7qdWfcQsQ2j1lPmPC1
+
+
+Endpoints:
+- Get jobs for driver:
+https://l9md4hy6ue.execute-api.ap-southeast-1.amazonaws.com/staging/v1/driver/29f8a47d-466a-40f8-9b85-35a0ccc31bb4/job
+
+Request and response parameter can refer to https://dlvrd.atlassian.net/browse/DLV-40
+Note that job with order that has "item_type_id" = 3 will be a depot job, item_type_id = 1 will be hot food, item_type_id = 2 will be cold food.
+
+- Submit job location:
+https://l9md4hy6ue.execute-api.ap-southeast-1.amazonaws.com/staging/v1/job/0e831a70-0e57-4da5-b541-995b4cfc413d/location
+
+Request and response parameter can refer to https://dlvrd.atlassian.net/browse/DLV-42
+
+Request body:
+{
+  "latitude": 1,
+  "longitude": 2,
+  "timestamp": 1591607312
+}
+
+
+- Submit job status:
+https://l9md4hy6ue.execute-api.ap-southeast-1.amazonaws.com/staging/v1/job/0e831a70-0e57-4da5-b541-995b4cfc413d/status
+
+Request and response parameter can refer to https://dlvrd.atlassian.net/browse/DLV-41
+
+Request body:
+{
+  "status": 1,
+  "timestamp": 1591607312
+}
+
